@@ -210,6 +210,16 @@ module.exports = {
     }
 }
 ```
+You also need  babel config to tell webpack what babel to use.
+You can either use a `.babelrc` or `babel.config.js` and they all need to be in
+the root of your application.
+
+```javascript
+//babel.config.js
+module.exports = {
+  presets: ["@babel/preset-env"]
+}
+```
 ### CSS loaders
 
 
