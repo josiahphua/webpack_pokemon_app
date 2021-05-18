@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://frontend_dev/./src/css/index.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;AACJ,C","file":"main.css","sourcesContent":["body{\n    background: aquamarine;\n    font-size: 20px;\n    font-weight: bold;\n}"],"sourceRoot":""}

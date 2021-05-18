@@ -1,27 +1,12 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/index.scss";
+import data from "./data";
 
-let object = {
-    names : ["ebere", "iweala"]
+function printToPage(){
+    document.getElementById("root")
+        .innerHTML = `<h1>Pokemon - ${data[0].name}</h1>`
 }
-console.log("ddd")
-console.log(object)
-console.log("testing 1231")
 
-console.log("testing 1232")
-
-
-console.log("ddd")
-console.log(object)
-console.log("testing 1231")
-
-console.log("testing 1232")
-
-
-console.log("ddd")
-console.log(object)
-console.log("testing 1231")
-
-console.log("testing 1232")
-
+printToPage()
 
 

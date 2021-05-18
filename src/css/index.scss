@@ -1,5 +1,9 @@
+:root{
+    --aq: aquamarine;
+}
+
 body{
-    background: aquamarine;
+    background: var(--aq);
     font-size: 20px;
     font-weight: bold;
 }
