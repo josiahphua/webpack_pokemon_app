@@ -177,14 +177,40 @@ module.exports = {
         //start in dist folder instead of root
        contentBase : "./dist",
         //hot reload enabled
+        //Hot Module Replacement (HMR) exchanges, adds, or removes modules while an 
+        //application is running, without a full reload. 
+        // This can significantly speed up development
         hot: true
     }
 }
 ```
 
+
 Now want webpack to handle all js files within out app and make it backward compatible to accommodate older browsers. We can use [Babel](https://babeljs.io/setup) for this.
 
 **[Babel Webpack Installation](https://babeljs.io/setup#installation)
+
+```javascript
+module.exports = {
+    ...
+    module:{
+        //adding babel to your app
+        rules:[
+            {
+                test: /\.js/,
+                exclude: /node_modules/,
+                use:{
+                    loader: "babel-loader"
+                }
+            }
+        ]
+    },
+    devServer: {
+        ...
+    }
+}
+```
+### CSS loaders
 
 
 
