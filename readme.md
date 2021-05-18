@@ -224,6 +224,16 @@ module.exports = {
 coming soon!
 
 
+
+```javascript
+//all commands we ran so far
+npm init -y
+npm i -D webpack webpack-cli webpack-dev-server
+npm i -D babel-loader @babel/core @babel/preset-env   
+npm i -D css-loader mini-css-extract-plugin    
+npm i -D sass sass-loader   
+npm i -D postcss postcss-preset-env 
+```
 ---
 
 # Additional Resources
