@@ -183,3 +183,12 @@ module.exports = {
 Now want webpack to handle all js files within out app and make it backward compatible to accommodate older browsers. We can use [Babel](https://babeljs.io/setup) for this.
 
 **[Babel Webpack Installation](https://babeljs.io/setup#installation)
+
+
+
+---
+
+# Additional Resources
+
+* [webpack.js](https://webpack.js.org/)
+* [weback.js > Getting Started](https://webpack.js.org/guides/getting-started/)
