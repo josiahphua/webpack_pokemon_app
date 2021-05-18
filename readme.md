@@ -51,7 +51,7 @@ dist/
     media/
       logo.png
       ...
-    index.html
+    index.html //you need to create this file yourself
   ...
 ```
 
