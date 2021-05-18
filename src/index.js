@@ -1,4 +1,4 @@
-import "./css/index.css";
+import "./css/index.scss";
 
 let object = {
     names : ["ebere", "iweala"]
