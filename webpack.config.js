@@ -4,7 +4,7 @@ module.exports = {
     //builds and creates main.css
     plugins: [new MiniCssExtractPlugin()],
     //environment
-    mode: "development",
+    mode: "production",
     devtool: "source-map",
     //modules needed
     module:{
