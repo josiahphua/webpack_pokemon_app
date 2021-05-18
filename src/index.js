@@ -3,8 +3,34 @@ import "./css/index.scss";
 import data from "./data";
 
 function printToPage(){
-    document.getElementById("root")
-        .innerHTML = `<h1>Pokemon - ${data[0].name}</h1>`
+    let $container = document.createElement("div")
+    $container.classList.add("container")
+
+    let $row = document.createElement("div")
+    $row.classList.add("row")
+
+    data.forEach(el => {
+        let $col = document.createElement("div")
+        $col.classList.add("col-md-3", "col-6", "mb-5")
+        //"col-md-3", "col-6", "mb-2"
+        let $card = document.createElement("div")
+        $card.classList.add("card")
+
+        let $cardBody = document.createElement("div")
+        $cardBody.classList.add("card-body")
+
+        let pokemonName = document.createTextNode(el.name)
+        $cardBody.appendChild(pokemonName)
+        $card.appendChild($cardBody)
+        $col.appendChild($card)
+        $row.appendChild($col)
+        $container.appendChild($row)
+    })
+
+
+
+
+    document.getElementById("root").appendChild($container)
 }
 
 printToPage()
