@@ -19,8 +19,12 @@ function printToPage(){
         let $cardBody = document.createElement("div")
         $cardBody.classList.add("card-body")
 
+        let $img = document.createElement("img")
+        // $img.src = pokemonLogo
+
         let pokemonName = document.createTextNode(el.name)
         $cardBody.appendChild(pokemonName)
+        $cardBody.appendChild($img)
         $card.appendChild($cardBody)
         $col.appendChild($card)
         $row.appendChild($col)
