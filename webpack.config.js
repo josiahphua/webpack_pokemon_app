@@ -1,5 +1,6 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const path = require('path')
 let mode = "development"
@@ -8,11 +9,19 @@ if(process.env.NODE_ENV == "production"){
 }
 
 module.exports = {
+    entry: './src/index.js',
+    output: {
+        path: path.resolve(__dirname, './dist'),
+        filename: 'main.js',
+    },
     //builds and creates main.css
     plugins: [
         new MiniCssExtractPlugin(),
         new CleanWebpackPlugin({
             cleanOnceBeforeBuildPatterns: [path.resolve(__dirname, "dist/**/*")]
+        }),new HtmlWebpackPlugin({
+            title: 'My App',
+            template: "./src/index.html"
         })],
     //environment
     mode: mode,
